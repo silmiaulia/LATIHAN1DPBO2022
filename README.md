@@ -8,5 +8,17 @@
   
 
 
-##### Berikut ini merupakan hasil screenshot program latihan A dalam bahasa pemograman PHP
-Screenshot/Latihan A.png
+##### 1. Latihan A dalam bahasa PHP
+![Latihan A](https://github.com/silmiaulia/LATIHAN1DPBO2022/blob/main/Screenshot/Latihan%20A.png)
+
+#### 2. Latihan B dalam bahasa java
+![Latihan B java]()
+
+#### 2. Latihan B dalam bahasa PHP
+![Latihan B PHP]()
+
+#### 2. Latihan B dalam bahasa C++
+![Latihan B C++]()
+
+#### 2. Latihan B dalam bahasa python
+![Latihan B python]()
