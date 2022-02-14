@@ -14,6 +14,7 @@ class TimSepakbola():
         self.__TahunBerdiri = "" 
         self. __jumlahPemain = 0 
 
+    # metode untuk getter dan setter
 
     def setNamaTim(self, NamaTim):
         self.__NamaTim = NamaTim
@@ -47,16 +48,18 @@ class TimSepakbola():
         return self.__jumlahPemain
     
 
-    class Player():
+    class Player(): # inner class Player
         
+        # atribut private untuk inner class
         __namaPemain = ""
         __noPunggung = ""
 
-        def __init__(self):
+        def __init__(self): #Constructor
 
             self.__namaPemain = ""
             self.__noPunggung = ""
 
+        # metode getter dan setter inner class
         def setNamaPemain(self, namaPemain):
             self.__namaPemain = namaPemain
         
@@ -71,13 +74,14 @@ class TimSepakbola():
         
  
 
-    def innerclass_list(self, jumlahPemain):
+    def innerclass_list(self, jumlahPemain): # prosedur untuk instansiasi objek array inner class
     
         self.pemain = [TimSepakbola.Player() for i in range(jumlahPemain)]
    
 
     i = 0
-    def getInfoTeam(self):
+
+    def getInfoTeam(self): # prosedur untuk menampilkan informasi tim sepakbola
         print("Nama Tim           : " + str(self.__NamaTim))
         print("Negara Asal Tim    : " + str(self.__NegaraTim))
         print("Tahun Berdiri Tim  : " + str(self.__TahunBerdiri) + '\n')
