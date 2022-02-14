@@ -1,14 +1,16 @@
-public class TimSepakbola{
+public class TimSepakbola{ // outer class
 
+    //Enkapsulasi private untuk atribut
     private String NamaTim;
     private String NegaraTim = "";
     private String TahunBerdiri = "";
     private int jumlahPemain = 0;
 
-    public TimSepakbola(){
+    public TimSepakbola(){ //Constructor
 
     }
 
+    // metode setter dan getter
     public void setNamaTim(String NamaTim){
         this.NamaTim = NamaTim;
     }
@@ -42,15 +44,17 @@ public class TimSepakbola{
         return jumlahPemain;
     }
 
-    class Player{
+    class Player{ // inner class
 
+        //Enkapsulasi private untuk atribut inner class
         private String namaPemain = "";
         private String noPunggung = "";
 
-        public Player(){
+        public Player(){ //Constructor
 
         }
 
+        // metode getter dan setter
         public void setNamaPemain(String namaPemain){
             this.namaPemain = namaPemain;
         }
@@ -68,10 +72,10 @@ public class TimSepakbola{
         }
     }
 
-    Player[] pemain = new Player[12];
+    Player[] pemain = new Player[12]; // membuat array objek inner class
     int i;
 
-    public void getInfoTeam(){
+    public void getInfoTeam(){ //prosedur untuk menampilkan informasi tim
 
         System.out.println("Nama Tim           : " + NamaTim);
         System.out.println("Negara Asal Tim    : " + NegaraTim);
