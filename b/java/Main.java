@@ -6,10 +6,11 @@ public class Main{
         
         int n =0, i = 0;
 
-        System.out.print("Masukan Jumlah Tim : ");
+        System.out.print("Masukan Jumlah Tim : "); 
         
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); //untuk scanner
 
+        //meminta inputan jumlah tim sepakbola
         try{
 
             n = Integer.parseInt(sc.nextLine());
@@ -17,10 +18,11 @@ public class Main{
         }catch(Exception e){}
 
 
-        TimSepakbola[] football = new TimSepakbola[n];
+        TimSepakbola[] football = new TimSepakbola[n]; //membuat array objek 
 
         for(i=0; i<n; i++){
-
+            
+            //inisialisasi variabel
             String NamaTim = "";
             String NegaraTim = "";
             String TahunBerdiri = "";
@@ -55,8 +57,7 @@ public class Main{
             football[i].setNegaraTim(NegaraTim);
             football[i].setTahunBerdiri_Tim(TahunBerdiri);
 
-            
-
+        
             //input jumlah pemain pada setiap tim
             System.out.print("Masukan jumlah pemain dalam tim  " + (i+1) + " : ");
             try{
@@ -75,7 +76,7 @@ public class Main{
 
                 for(j=0; j<Pemain; j++){
 
-                    //deklarasi dan inisialisasi atribut untuk inner class
+                    //inisialisasi atribut untuk inner class
                     String namaPemain = "";
                     String NoPemain = "";
 
@@ -94,7 +95,7 @@ public class Main{
                     //instantiation 
                     football[i].pemain[j] = football[i].new Player(); 
 
-                    //memanggil prosedur setter
+                    //memanggil prosedur setter dari objek
                     football[i].pemain[j].setNamaPemain(namaPemain);
                     football[i].pemain[j].setNoPemain(NoPemain);   
                     
